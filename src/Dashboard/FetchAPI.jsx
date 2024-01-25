@@ -20,7 +20,8 @@ const FetchAPI = () => {
 
   useEffect(() => {
     const fetchDataFromApi = async () => {
-      const API_URL = "http://localhost:5000";
+      // const API_URL = "http://localhost:5000";
+      const API_URL = "https://data-visualyser-backend.onrender.com";
       try {
         const response = await axios.get(`${API_URL}/api/data`);
         setData(response.data);
